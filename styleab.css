@@ -1,0 +1,205 @@
+/*..............Universal selector.........*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    font-family:'Arial, sans-serif';
+}
+
+    /*...............About Background image..........*/
+
+    #home{
+        background-image:linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("img/about1.jpg");
+            width: 100%;
+            height:380px;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transform: translate(0px,70px);
+        }
+        #home h1{
+            color: white;
+            font-size: 70px; 
+            
+            
+        }
+        #home pre{
+            color: white;
+            font-size: 25px; 
+            line-height: 2;
+        }
+        
+        
+    /*...............service...........*/
+
+    .service-box{
+        text-align: center;
+        padding: 25px 0px;
+        
+        
+    }
+    .service{
+        display: flex;
+        /*background-color: black;*/
+        padding: 100px;
+        margin: auto;
+        width: 100%;
+        height: 380px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        
+
+    }
+    .boxitems{
+        
+        background: #cefbff;
+        margin: 10px 0px;
+        flex-basis: 23%;
+        height: 230px;
+        width: 20%;
+        text-align: center;
+        overflow:hidden;
+        
+    }
+    .boxitems i{
+
+        color: #13ebff;
+        font-size: 60px;
+        padding: 20px 0;
+        
+
+    }
+    .boxitems  h6{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .boxitems p{
+        font-size: 16px;
+        font-weight: 100;
+        text-align:center;
+        padding: 10px;
+    }
+    .boxitems:hover{
+         background-color:#2ccad8;
+         opacity: .89;
+         transform: scale(0.9);
+        z-index: 2;
+        transition: 1s;
+    }
+    .boxitems:hover i ,.boxitems:hover h6,.boxitems:hover p{
+        color: white;
+        transform: translate(-0%, -7%);
+        
+    }
+    /*@media only screen and (max-width:767px){
+        
+        .boxitems{
+            width: 100%;
+            margin: 10px 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+    }*/
+
+    /*................About start................*/
+
+    .about{
+        
+        width: 100%;
+        
+        margin-top:  40px;
+        display: flex;
+        justify-content:center;
+
+    }
+    .aboutimg{
+    float: left;
+    width: 45%;
+    position: relative;
+    left: 55px;
+    z-index: 0;
+    
+    
+    }
+    .aboutcontent {
+        
+        width: 40%;
+        float: left;
+        
+    }
+
+    .aboutcontent h6{
+        font-size: 18px;
+        font-weight: 500;
+        color: #18d4e6;
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0 0 4px 0px;
+        padding: 0 0 8px;
+    }
+
+    .aboutcontent h1{
+        font-size:40px;
+        margin: 0 0  30px 0px;
+        
+    }
+
+    .aboutcontent  .aboutpara1{
+        margin: 0 0 25px 0px;
+        font-size:16px;
+        color: rgb(59, 56, 56);
+    }
+
+    .aboutcontent  .aboutpara2{
+        margin: 0 0 20px 0px;
+        color:rgb(59,56,56) ;
+    }
+
+    .aboutdiv1{
+        float: left;
+        
+    }
+    .aboutpara2{
+        padding: 12px 0;
+    }
+
+    .aboutdiv-1 {
+        margin: 0  30px 20px 0px;
+        
+    }
+
+    .aboutdiv-1 i{
+        font-size: 18px;
+        color:#2dd3e2;
+        
+    }
+    .aboutdiv2.button{
+        margin: 10px 40px;
+
+    }
+    .button{
+        background-color:#06BBCC;
+        margin: 0px 30px 20px 0;
+        color: #fff;
+        padding: 20px 60px;
+        border: none;
+        position: absolute;
+        font-size: 18px;
+    }
+    .button:hover{
+        background-color:#13ebff;
+        color: white;
+    }
+     /*................About End................*/
